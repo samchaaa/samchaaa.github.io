@@ -72,7 +72,7 @@ p.lead {
 }
 
 .social-icons a:hover {
-  background-color: #BD5D38;
+  background-color: #2E86C1;
 }
 
 .dev-icons {
@@ -175,18 +175,22 @@ section.resume-section .resume-item .resume-date {
   }
 }
 
+/* So Sam can find this more easily */
+
 .bg-primary {
-  background-color: #BD5D38 !important;
+  background-color: #2E86C1 !important;
 }
 
+/*  */
+
 .text-primary {
-  color: #BD5D38 !important;
+  color: #2E86C1 !important;
 }
 
 a {
-  color: #BD5D38;
+  color: #2E86C1;
 }
 
 a:hover, a:focus, a:active {
-  color: #824027;
+  color: #21618C;
 }
