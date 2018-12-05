@@ -29,7 +29,7 @@
       <a class="navbar-brand js-scroll-trigger" href="#page-top">
         <span class="d-block d-lg-none">Sam Chakerian</span>
         <span class="d-none d-lg-block">
-          <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/profile.jpg" alt="">
+          <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/profile.jpg" alt="profile">
         </span>
       </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -44,20 +44,17 @@
             <a class="nav-link js-scroll-trigger" href="#projects">Projects</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#experience">Experience</a>
-          </li>
-          <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#education">Education</a>
           </li>
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#skills">Skills</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#interests">Interests</a>
+            <a class="nav-link js-scroll-trigger" href="#experience">Other experience</a>
           </li>
-          <!-- <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#awards">Awards</a>
-          </li> -->
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#interests">Personal interests</a>
+          </li>
         </ul>
       </div>
     </nav>
@@ -83,9 +80,6 @@
             <a href="https://twitter.com/therealsamcha">
               <i class="fab fa-twitter"></i>
             </a>
-            <!-- <a href="#">
-              <i class="fab fa-facebook-f"></i>
-            </a> -->
           </div>
         </div>
       </section>
@@ -93,103 +87,132 @@
       <!--  Sam add stuff here-->
 
       <hr class="m-0">
-
+<style>
+.projectUl li{padding:7px}
+.btnLine{cursor:pointer;padding:3px 10px;margin-top:15px;margin-right:5PX;margin-bottom:20px;background-color:white;color:#2E86C1;font-size:0.9em;border-radius:9px;border:1px solid #2E86C1}
+.btnLine:hover{background-color:#084B8A;color:white}
+</style>
+	  
       <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="projects">
         <div class="my-auto">
           <h2 class="mb-5">Projects</h2>
-
+		  <div class="subheading mb-3">Project List</div>
+			<ul class="projectUl">
+				<li><a href="#solar">Capstone : Predicting Solar Irradiance</a></li>
+				<li><a href="#chicago"> Time Series and Geospatial Modeling : Chicago West Nile Virus Prediction </a></li>
+				<li><a href="#iowa"> Multiple Linear Regression : Ames Iowa Housing Price Prediction </a></li>
+				<li><a href="#vix"> VIX Scraper and Analysis </a></li>
+				<li><a href="#seaborn"> Graphing Market Profile in Seaborn </a></li>
+			</ul>
+			<br><br>
+			
+			
+		<div class="resume-date text-md-left" id="solar">
+		  <span class="text-primary">October 2018</span>
+		</div>
           <div class="resume-item d-flex flex-column flex-md-row mb-5">
+			<div class="cleara"></div>
             <div class="resume-content mr-auto">
               <h3 class="mb-0"><a href="https://github.com/samchaaa/capstone_repo">Capstone: Predicting Solar Irradiance</a></h3>
               <div class="subheading mb-3">DATA SCIENCE IMMERSIVE, GENERAL ASSEMBLY</div>
-              <p>Modeled solar irradiance for the Los Angeles area. Used LSTMs with historical irradiance, weather, and satellite data to predict trends at one day, one week, and one month projections.</p>
-            </div>
-            <div class="resume-date text-md-right">
-              <span class="text-primary">October 2018</span>
-            </div>
-          </div>
+			  <a href="https://github.com/samchaaa/capstone_repo"><img src="img/res_96.png" style="width:90%;object-fit:contain" alt="solar"></a>
+			
+              <p><br>Modeled solar irradiance for the Los Angeles area. Used LSTMs with historical irradiance, weather, and satellite data to predict trends at one day, one week, and one month projections.</p>
 
+              <font color="#01A9DB"># Keras&nbsp;&nbsp;&nbsp;# Python 3&nbsp;&nbsp;&nbsp;# Time series</font><br>
+
+              <button class="btnLine" onclick="location.href='https://github.com/samchaaa/capstone_repo'">GitHub >> </button>
+              <button class="btnLine" onclick="location.href='https://docs.google.com/presentation/d/1AzhJZZMlhhHzTSzhDT9g5xVkLBVuIuJTVMbXXLKdAno/present?slide=id.p'">Google Slides >></button>
+
+            </div>
+			
+			
+          </div>
+		  
+			<br>
+		<div class="resume-date text-md-left" id="chicago">
+		  <span class="text-primary">September 2018</span>
+		</div>
           <div class="resume-item d-flex flex-column flex-md-row mb-5">
             <div class="resume-content mr-auto">
               <h3 class="mb-0"><a href="https://github.com/samchaaa/Chicago_WNV_Prediction">Time Series and Geospatial Modeling: Chicago West Nile Virus Prediction</a></h3>
               <div class="subheading mb-3">DATA SCIENCE IMMERSIVE, GENERAL ASSEMBLY</div>
+
+              <a href="https://github.com/samchaaa/Chicago_WNV_Prediction"><img src="img/chi.png" style="width:90%;object-fit:contain" alt="chicago"></a>
+
               <p>Group project predicting spread of West Nile Virus in Chicago from 2011 - 2013, using City of Chicago and local weather datasets. Utilized time series, geospatial, and weather data with clustering and multiple models to find the most accurate predictions.</p>
-            </div>
-            <div class="resume-date text-md-right">
-              <span class="text-primary">September 2018</span>
+			  <font color="#01A9DB">
+				# Geospatial&nbsp;&nbsp;&nbsp;# Clustering&nbsp;&nbsp;&nbsp;# GridSearch&nbsp;&nbsp;&nbsp;# Python 3&nbsp;&nbsp;&nbsp;# Time series&nbsp;&nbsp;&nbsp;
+				# Tableau&nbsp;&nbsp;&nbsp;# Bokeh&nbsp;&nbsp;&nbsp;# Git&nbsp;&nbsp;&nbsp;# Scikit-learn
+			  </font><br>
+
+              <button class="btnLine" onclick="location.href='https://github.com/samchaaa/Chicago_WNV_Prediction'">GitHub >> </button>
+              <button class="btnLine" onclick="location.href='https://docs.google.com/presentation/d/16lK1tgRsx71pVeUpVn1VS1ZqgT3O418iS_QGK2pM940/present?usp=sharing'">Google Slides >></button>
             </div>
           </div>
-
+		  <br>
+		  
+		<div class="resume-date text-md-left" id="iowa">
+		  <span class="text-primary">August 2018</span>
+		</div>
           <div class="resume-item d-flex flex-column flex-md-row mb-5">
             <div class="resume-content mr-auto">
-              <h3 class="mb-0"><a href="https://github.com/samchaaa/Housing_Price_Regression/blob/master/README.md">Multiple Linear Regression: Ames Iowa Housing Price Prediction</a></h3>
+              <h3 class="mb-0"><a href="https://github.com/samchaaa/Housing_Price_Regression">Multiple Linear Regression: Ames Iowa Housing Price Prediction</a></h3>
               <div class="subheading mb-3">DATA SCIENCE IMMERSIVE, GENERAL ASSEMBLY</div>
-              <p>Predicted housing prices for dataset of over 2,000 houses and 85 features, scoring 87% accuracy. Used alternative datasets, scikit-learn, and multiple statistical validation techniques.</p>
-            </div>
-            <div class="resume-date text-md-right">
-              <span class="text-primary">August 2018</span>
+
+              <!-- PICS -->
+
+              <p>Kaggle competition: Predicted housing prices for dataset of over 2,000 houses and 85 features, scoring 87% accuracy. Used alternative datasets, scikit-learn, and multiple statistical validation techniques.</p>
+			  <font color="#01A9DB"># Python 3&nbsp;&nbsp;&nbsp;# Scikit-learn&nbsp;&nbsp;&nbsp;# Feature selection&nbsp;&nbsp;&nbsp;# Regularization</font><br>
+
+			  <button class="btnLine" onclick="location.href='https://github.com/samchaaa/Housing_Price_Regression'">GitHub >> </button>
+              <button class="btnLine" onclick="location.href='https://docs.google.com/presentation/d/1RmonfGer3fjpUhlXbdTgxVkZEi_Af-P-Q6SnkCQiBBs/present?slide=id.p'">Google Slides >></button>
+			  
             </div>
           </div>
-
+			<br>
+		<div class="resume-date text-md-left" id="vix">
+		  <span class="text-primary">August 2018</span>
+		</div>
           <div class="resume-item d-flex flex-column flex-md-row">
             <div class="resume-content mr-auto">
               <h3 class="mb-0"><a href="https://github.com/samchaaa/vix_calculation">VIX Scraper and Analysis</a></h3>
               <div class="subheading mb-3">Self</div>
+
+              <!-- PICS -->
+
               <p>Calculated the Volatility Index value from SPX options chains scraped on Yahoo!Finance.</p>
-            </div>
-            <div class="resume-date text-md-right">
-              <span class="text-primary">August 2018</span>
+				<font color="#01A9DB"># Scraping&nbsp;&nbsp;&nbsp;# Control flow&nbsp;&nbsp;&nbsp;# Math</font><br>
+
+			  <button class="btnLine" onclick="location.href='https://github.com/samchaaa/vix_calculation'">GitHub >> </button>
+
             </div>
           </div>
+			<br><br><br>
+		<div class="resume-date text-md-left" id="seaborn">
+		  <span class="text-primary">August 2018</span>
+		</div>
+          <div class="resume-item d-flex flex-column flex-md-row">
+            <div class="resume-content mr-auto">
+              <h3 class="mb-0"><a href="https://github.com/samchaaa/market_profile">Graphing Market Profile in Seaborn</a></h3>
+              <div class="subheading mb-3">Self</div>
+
+              <a href="https://github.com/samchaaa/market_profile"><img src="img/mp.png" style="width:90%;object-fit:contain" alt="market_profile"></a>
+
+              <p>Graphing daily market profile visualization for currency data in Seaborn, using creative control flow.</p>
+				<font color="#01A9DB"># Time series&nbsp;&nbsp;&nbsp;# Seaborn&nbsp;&nbsp;&nbsp;# Visualization</font><br>
+			
+			  <button class="btnLine" onclick="location.href='https://github.com/samchaaa/market_profile'">GitHub >> </button>
+
+            </div>
+          </div>
+		  <br><br>
 
         </div>
 
       </section>
-
-      <!--  -->
 
       <hr class="m-0">
-
-      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="experience">
-        <div class="my-auto">
-          <h2 class="mb-5">Experience</h2>
-
-          <div class="resume-item d-flex flex-column flex-md-row mb-5">
-            <div class="resume-content mr-auto">
-              <h3 class="mb-0">Content and Copy Writer</h3>
-              <div class="subheading mb-3">Freelance</div>
-              <p>Wrote content and copy for fields including eCommerce, travel, personal finance and psychology.</p>
-            </div>
-            <div class="resume-date text-md-right">
-              <span class="text-primary">January 2017 - January 2018</span>
-            </div>
-          </div>
-
-          <div class="resume-item d-flex flex-column flex-md-row mb-5">
-            <div class="resume-content mr-auto">
-              <h3 class="mb-0">Driver</h3>
-              <div class="subheading mb-3">Alpha Distributing</div>
-              <p>Picked and delivered beer, soda, and hot sauce for local businesses, handled and reconciled payments. Great at parallel parking a box truck.</p>
-            </div>
-            <div class="resume-date text-md-right">
-              <span class="text-primary">February 2016 - January 2017</span>
-            </div>
-          </div>
-
-          <div class="resume-item d-flex flex-column flex-md-row mb-5">
-            <div class="resume-content mr-auto">
-              <h3 class="mb-0">Lead Bassist</h3>
-              <div class="subheading mb-3">Swing Reunion Orchestra</div>
-              <p>Performed double bass at gigs, monthly dances, and weekly sessions.</p>
-            </div>
-            <div class="resume-date text-md-right">
-              <span class="text-primary">February 2015 - March 2017</span>
-            </div>
-          </div>
-
-        </div>
-
-      </section>
 
       <hr class="m-0">
 
@@ -248,30 +271,54 @@
             <li>Matplotlib</li>
           </ul>
 
-          <!-- <div class="subheading mb-3">Workflow</div>
-          <ul class="fa-ul mb-0">
-            <li>
-              <i class="fa-li fa fa-check"></i>
-              Mobile-First, Responsive Design</li>
-            <li>
-              <i class="fa-li fa fa-check"></i>
-              Cross Browser Testing &amp; Debugging</li>
-            <li>
-              <i class="fa-li fa fa-check"></i>
-              Cross Functional Teams</li>
-            <li>
-              <i class="fa-li fa fa-check"></i>
-              Agile Development &amp; Scrum</li>
-          </ul> -->
-
         </div>
       </section>
 
       <hr class="m-0">
+      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="experience">
+        <div class="my-auto">
+          <h2 class="mb-5">Other experience</h2>
+
+          <div class="resume-item d-flex flex-column flex-md-row mb-5">
+            <div class="resume-content mr-auto">
+              <h3 class="mb-0">Content and Copy Writer</h3>
+              <div class="subheading mb-3">Freelance</div>
+              <p>Wrote content and copy for fields including eCommerce, travel, personal finance and psychology.</p>
+            </div>
+            <div class="resume-date text-md-right">
+              <span class="text-primary">January 2017 - January 2018</span>
+            </div>
+          </div>
+
+          <div class="resume-item d-flex flex-column flex-md-row mb-5">
+            <div class="resume-content mr-auto">
+              <h3 class="mb-0">Driver</h3>
+              <div class="subheading mb-3">Alpha Distributing</div>
+              <p>Picked and delivered beer, soda, and hot sauce for local businesses, handled and reconciled payments. Great at parallel parking a box truck.</p>
+            </div>
+            <div class="resume-date text-md-right">
+              <span class="text-primary">February 2016 - January 2017</span>
+            </div>
+          </div>
+
+          <div class="resume-item d-flex flex-column flex-md-row mb-5">
+            <div class="resume-content mr-auto">
+              <h3 class="mb-0">Lead Bassist</h3>
+              <div class="subheading mb-3">Swing Reunion Orchestra</div>
+              <p>Performed double bass at gigs, monthly dances, and weekly sessions.</p>
+            </div>
+            <div class="resume-date text-md-right">
+              <span class="text-primary">February 2015 - March 2017</span>
+            </div>
+          </div>
+
+        </div>
+
+      </section>
 
       <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="interests">
         <div class="my-auto">
-          <h2 class="mb-5">Interests</h2>
+          <h2 class="mb-5">Personal interests</h2>
           <p>I am incredibly interested in financial trading, no matter what method, timeframe, or instrument. To me, trading is an amazing cocktail of human psychology, decision-making, statistics, economics, and game theory... it never ceases to evolve and change, so there is no real way to "solve" it. I think there are many lessons to be learned from trading including more effective decision-making, restraint, patience, probabilistic thinking, and acceptance of loss.</p>
 
           <p>In my free time I pursue discretionary (meaning manual) currency trading, and seek to connect local traders in my community to share ideas, lessons, and better master this amazing game!</p>
@@ -280,42 +327,6 @@
       </section>
 
       <hr class="m-0">
-
-      <!-- <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="awards">
-        <div class="my-auto">
-          <h2 class="mb-5">Awards &amp; Certifications</h2>
-          <ul class="fa-ul mb-0">
-            <li>
-              <i class="fa-li fa fa-trophy text-warning"></i>
-              Google Analytics Certified Developer</li>
-            <li>
-              <i class="fa-li fa fa-trophy text-warning"></i>
-              Mobile Web Specialist - Google Certification</li>
-            <li>
-              <i class="fa-li fa fa-trophy text-warning"></i>
-              1<sup>st</sup>
-              Place - University of Colorado Boulder - Emerging Tech Competition 2009</li>
-            <li>
-              <i class="fa-li fa fa-trophy text-warning"></i>
-              1<sup>st</sup>
-              Place - University of Colorado Boulder - Adobe Creative Jam 2008 (UI Design Category)</li>
-            <li>
-              <i class="fa-li fa fa-trophy text-warning"></i>
-              2<sup>nd</sup>
-              Place - University of Colorado Boulder - Emerging Tech Competition 2008</li>
-            <li>
-              <i class="fa-li fa fa-trophy text-warning"></i>
-              1<sup>st</sup>
-              Place - James Buchanan High School - Hackathon 2006</li>
-            <li>
-              <i class="fa-li fa fa-trophy text-warning"></i>
-              3<sup>rd</sup>
-              Place - James Buchanan High School - Hackathon 2005</li>
-          </ul>
-        </div>
-      </section> -->
-
-    </div>
 
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
